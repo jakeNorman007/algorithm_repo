@@ -1,7 +1,8 @@
-import linear_search from "../Linear_search";
+import linear_search from "../key/Linear_search";
+import linear_search_list_wb from "../workbook/Linear_Search_Wokrbook";
 import { test, expect } from "vitest";
 
-test("Linear search list/ array", function() {
+test("Linear search list key", function() {
     
     const foo = [1, 2, 3, 10, 25, 88, 150, 667, 1010, 3333, 45968]
 
@@ -13,4 +14,18 @@ test("Linear search list/ array", function() {
    expect(linear_search(foo, 4444)).toEqual(false); 
    expect(linear_search(foo, 45968)).toEqual(true); 
    expect(linear_search(foo, 42069)).toEqual(false); 
+});
+
+test("Linear search list workbook", function() {
+    
+    const foo = [1, 2, 3, 10, 25, 88, 150, 667, 1010, 3333, 45968]
+
+   expect(linear_search_list_wb(foo, 1)).toEqual(true); 
+   expect(linear_search_list_wb(foo, 5)).toEqual(false); 
+   expect(linear_search_list_wb(foo, 25)).toEqual(true); 
+   expect(linear_search_list_wb(foo, 90)).toEqual(false); 
+   expect(linear_search_list_wb(foo, 667)).toEqual(true); 
+   expect(linear_search_list_wb(foo, 4444)).toEqual(false); 
+   expect(linear_search_list_wb(foo, 45968)).toEqual(true); 
+   expect(linear_search_list_wb(foo, 42069)).toEqual(false); 
 });

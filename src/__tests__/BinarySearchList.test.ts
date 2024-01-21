@@ -1,4 +1,4 @@
-import binary_search_list from "../Binary_search";
+import binary_search_list from "../key/Binary_search";
 import { test, expect } from "vitest";
 
 test("Binary search a list", function() {
