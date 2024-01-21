@@ -1,6 +1,6 @@
-export default function linear_search(haystack: number[], needle: number): boolean {
-    for(let i = 0; i < haystack.length; ++i) {
-        if(haystack[i] === needle) {
+export default function linear_search(foo: number[], bar: number): boolean {
+    for(let i = 0; i < foo.length; ++i) {
+        if(foo[i] === bar) {
             return true;
         }
     }
