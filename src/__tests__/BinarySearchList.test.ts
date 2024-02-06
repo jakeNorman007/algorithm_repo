@@ -14,10 +14,9 @@ test("Binary search, key", function() {
     expect(binary_search_list(foo, 69)).toEqual(false);
 });
 
-
 test("Binary search, workbook", function() {
 
-    const foo = [1, 2, 3, 4, 5, 6, 7, 150, 247, 5676, 98765];
+    const foo = [1, 2, 3, 4, 5, 6, 7, 150, 247, 5676, 9888888];
 
     expect(binary_search_list_wb(foo, 1)).toEqual(true);
     expect(binary_search_list_wb(foo, 9)).toEqual(false);
