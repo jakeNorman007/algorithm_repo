@@ -1,5 +1,4 @@
 export default function crystal_balls(broken: boolean[]): number {
-
     //runtime here is the square root of N
     const jumpAmount = Math.floor(Math.sqrt(broken.length)); //use floor because in an instance sqrt 3 is 1. so we round
 
