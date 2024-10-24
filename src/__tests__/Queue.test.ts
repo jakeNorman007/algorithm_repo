@@ -1,4 +1,4 @@
-import Queue from "../key/Queue";
+import Queue from "../algos/Queue";
 import { test, expect } from "vitest";
 
 test("queue, key", function() {

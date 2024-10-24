@@ -1,4 +1,4 @@
-import binary_search_list from "../key/Binary_search";
+import binary_search_list from "../algos/Binary_search";
 import { test, expect } from "vitest";
 
 test("Binary search, key", function() {

@@ -1,4 +1,4 @@
-import crystal_balls from "../key/Crystal_balls";
+import crystal_balls from "../algos/Crystal_balls";
 import { test, expect } from "vitest";
 
 test("two crystal balls problem, key", function() {

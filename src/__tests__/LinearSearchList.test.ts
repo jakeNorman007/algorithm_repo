@@ -1,4 +1,4 @@
-import linear_search from "../key/Linear_search";
+import linear_search from "../algos/Linear_search";
 import { test, expect } from "vitest";
 
 test("Linear search, key", function() {

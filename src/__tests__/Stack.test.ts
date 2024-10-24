@@ -1,4 +1,4 @@
-import stack from "../workbook/Stack_workbook";
+import stack from "../algos/Stack";
 import { test, expect } from "vitest";
 
 test("stack, key", function () {
@@ -14,11 +14,11 @@ test("stack, key", function () {
     list.push(11);
     expect(list.pop()).toEqual(11);
     expect(list.pop()).toEqual(7);
-    expect(list.peek()).toEqual(5);
+    expect(list.peep()).toEqual(5);
     expect(list.pop()).toEqual(5);
     expect(list.pop()).toEqual(undefined);
 
-    list.push(69);
-    expect(list.peek()).toEqual(69);
+    list.push(13);
+    expect(list.peep()).toEqual(13);
     expect(list.length).toEqual(1);
 });
